@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>人物信息页</title>
+ 	<script src="js/d3.v3.min.js"></script>
+    <script src="js/d3.layout.cloud.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+ 	<link rel="stylesheet" type="text/css" href="css/sequences.css"/>
+<style>
+	body { background-image:url(img/bg.png); }
+	#header { background-color:rgb(255,255,255); border-bottom-style:solid; border-bottom-color:rgb(204,204,204); border-bottom-width:thin}
+	.row { margin-right:-20px}
+	#pic {margin-top:30px; margin-left:35px}
+	#name {padding-left:95px; padding-top:10px}
+	#main { margin-top:30px; margin-left:30px}
+</style>
+</head>
+
+<body>
+<div class="container-fluid">
+	<div class="row" id="header">
+    	<div class="span2"></div>
+    	<h2 class="span11 text-warning">人物信息页</h2>
+        <img class="span2" src="img/logo1.png" />
+    </div>
+	<div class="row">
+    	<div class="span1"></div>
+<!--左侧个人简介 -->
+		<div class="span4">
+        	<img src="img/jnc.jpg" width="150" id="pic" class="img-polaroid"/>
+            <p id="name" ><strong class="text-info" >江南春</strong></p>
+            <p><em>（1973年—）祖籍浙江宁波，生于上海，分众传媒的创始人，自公司于2003年5月成立开始担任董事局主席和首席执行官。</em></p>
+            <p><em>新浪微博：</em><br /><a href="http://weibo.com/jiangnanchun">http://weibo.com/jiangnanchun</a></p>
+        </div>
+<!--中间图形部分 -->
+    	<div class="span7">
+        	<div id="main">
+      			<div id="sequence"></div>
+      				<div id="chart">
+                    <div id="rank">江南春<br  /> 广告业 第2名</div>
+                        <div id="explanation" style="visibility: hidden;">
+                        <span id="percentage"></span><br/>
+                        </div>
+      				</div>
+    				</div>
+       </div>
+<!--右侧参数部分 -->
+    	<div class="span4">
+        	<div id="tag" class="text-success"></div>
+            <div id="tagExplain" class="text-info"></div>
+            <hr style="margin-top:85px; border-bottom:rgb(192,192,192) 1px solid;" />
+            <div  class="text-success" style="font-size:1.5em">比较：</div>
+            <div id="compare"  class="text-warning"></div>
+             <hr style="margin-top:45px; border-bottom:rgb(192,192,192) 1px solid;" />
+            <div  class="text-success" style="font-size:1.5em">词云：</div>
+            <div id="wordcloud"></div>
+        </div>
+    </div>
+</div>
+</body>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/sequences.js"></script>
+  <script type="text/javascript" src="js/wordcloud.js"></script>
+
+</html>

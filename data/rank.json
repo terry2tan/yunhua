@@ -1,0 +1,35 @@
+{
+   "name": "root",
+   "children": [
+    {
+     "name": "知名度",
+     "children": [
+      {"name": "公众知名度", "size": 1.34},
+      {"name": "行业知名度", "size": 0.34},
+      {"name": "媒体知名度", "size": 0.75}
+     ]
+    },
+	{
+     "name": "关注度",
+     "children": [
+      {"name": "热议度", "size": 3.19},
+      {"name": "关注度", "size": 0.34},
+      {"name": "被阅读量", "size": 7.13}
+     ]
+    },
+	{
+     "name": "美誉度",
+     "children": [
+      {"name": "美誉度", "size": 6.73}
+     ]
+    },
+	{
+     "name": "活跃度",
+     "children": [
+      {"name": "原创活跃度", "size": 1.85},
+	  {"name": "转发活跃度", "size": 32.50},
+	  {"name": "互动度", "size": 18.76}
+     ]
+    }
+]
+}
